@@ -100,9 +100,8 @@ final class Vite extends Component
      *
      * @param array|string|null $entrypoints Entrypoints to render, or `null` to use the configured defaults.
      *
-     * @return string Concatenated HTML tags ready for output.
-     *
      * @throws InvalidConfigException if the manifest is missing, invalid, or entrypoints cannot be resolved.
+     * @return string Concatenated HTML tags ready for output.
      *
      * @phpstan-param string[]|string|null $entrypoints
      */
@@ -159,9 +158,8 @@ final class Vite extends Component
     /**
      * Reads, decodes, validates, and caches the Vite manifest file.
      *
-     * @return array Parsed manifest keyed by source entrypoint path.
-     *
      * @throws InvalidConfigException if the manifest file is missing, unreadable, or contains invalid data.
+     * @return array Parsed manifest keyed by source entrypoint path.
      *
      * @phpstan-return array<string, array<string, mixed>>
      */
@@ -213,9 +211,8 @@ final class Vite extends Component
      * @param array $manifest Parsed Vite manifest.
      * @param string $entrypoint Source entrypoint path (e.g. `resources/js/app.js`).
      *
-     * @return array Chunk descriptor containing at least a `file` key.
-     *
      * @throws InvalidConfigException if the entrypoint is missing or its chunk is malformed.
+     * @return array Chunk descriptor containing at least a `file` key.
      *
      * @phpstan-param array<string, array<string, mixed>> $manifest
      * @phpstan-return array<string, mixed>
@@ -244,9 +241,8 @@ final class Vite extends Component
      *
      * @param array|string|null $entrypoints Raw entrypoints to normalize.
      *
-     * @return array Non-empty list of unique, trimmed entrypoint paths.
-     *
      * @throws InvalidConfigException if the resulting list is empty or contains non-string values.
+     * @return array Non-empty list of unique, trimmed entrypoint paths.
      *
      * @phpstan-param string[]|string|null $entrypoints
      * @phpstan-return string[]
@@ -443,9 +439,8 @@ final class Vite extends Component
     /**
      * Validates and returns the trimmed Vite dev server URL.
      *
-     * @return string Dev server base URL without trailing slash.
-     *
      * @throws InvalidConfigException if `devServerUrl` is empty or not configured.
+     * @return string Dev server base URL without trailing slash.
      */
     private function resolveDevServerUrl(): string
     {
