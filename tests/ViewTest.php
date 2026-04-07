@@ -50,7 +50,9 @@ final class ViewTest extends TestCase
 
         $this->setAbsoluteUrl('/dashboard');
         $this->expectException(InvalidConfigException::class);
-        $this->expectExceptionMessage(Vite::class);
+        $this->expectExceptionMessage(
+            "The 'inertiaVue' application component must be an instance of " . Vite::class . '.',
+        );
 
         Inertia::render('Dashboard', ['stats' => ['visits' => 42]]);
     }
