@@ -8,10 +8,10 @@ use yii\inertia\{Page, Vite};
 use yii\web\View;
 
 /**
- * @var Page $page
- * @var string $id
- * @var string $pageJson
- * @var View $this
+ * @var string $id Unique ID for the root element.
+ * @var Page $page Page data.
+ * @var string $pageJson JSON-encoded page data.
+ * @var View $this View component instance.
  */
 $vite = Yii::$app->get('inertiaVue');
 
