@@ -21,7 +21,7 @@ use yii\web\{Application, Response};
  */
 final class ViewTest extends TestCase
 {
-    public function testThrowInvalidConfigExceptionForNonViteComponent(): void
+    public function testThrowInvalidConfigExceptionWhenNonViteComponent(): void
     {
         $this->destroyApplication();
 
