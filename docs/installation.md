@@ -21,9 +21,9 @@ Add to your `composer.json`.
 
 ```json
 {
-    "require": {
-        "yii2-framework/inertia-vue": "^0.1"
-    }
+  "require": {
+    "yii2-framework/inertia-vue": "^0.1"
+  }
 }
 ```
 
@@ -63,33 +63,33 @@ at the project root.
 
 ```json
 {
-    "require": {
-        "php-forge/foxy": "^0.2",
-        "yii2-framework/inertia-vue": "^0.1"
+  "require": {
+    "php-forge/foxy": "^0.2",
+    "yii2-framework/inertia-vue": "^0.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-forge/foxy": true
     },
-    "config": {
-        "allow-plugins": {
-            "php-forge/foxy": true
-        },
-        "foxy": {
-            "manager": "npm"
-        }
+    "foxy": {
+      "manager": "npm"
     }
+  }
 }
 ```
 
 ```json
 {
-    "private": true,
-    "type": "module",
-    "dependencies": {
-        "@inertiajs/vue3": "^2.0",
-        "vue": "^3.5"
-    },
-    "devDependencies": {
-        "@vitejs/plugin-vue": "^5.2",
-        "vite": "^8.0"
-    }
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@inertiajs/vue3": "^2.0",
+    "vue": "^3.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2",
+    "vite": "^8.0"
+  }
 }
 ```
 
