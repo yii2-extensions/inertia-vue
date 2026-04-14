@@ -74,7 +74,7 @@ return [
 ];
 ```
 
-Use only `yii\inertia\vue\Bootstrap::class` in the bootstrap list. It already delegates the base 
+Use only `yii\inertia\vue\Bootstrap::class` in the bootstrap list. It already delegates the base
 `yii2-extensions/inertia` bootstrap.
 
 ## Vue client entrypoint
